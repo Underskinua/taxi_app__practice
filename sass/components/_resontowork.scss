@@ -1,0 +1,32 @@
+.resontowork {
+    @media screen and (min-width: 320px) {
+        padding-top: 20px;
+        padding-bottom: 40px;
+
+        & h3 {
+            
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 1;
+            color: #ffffff;
+            background: #000000;
+            padding: 7px 9px 7px 9px;
+            text-transform: uppercase;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 16px;
+            width: 115px;
+        }
+
+        & h2 {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1;
+            color: #222222;
+            
+        }
+    }    
+}
+

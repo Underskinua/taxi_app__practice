@@ -1,0 +1,15 @@
+.header {
+    background: #212121;
+    @media screen and (min-width: 320px) {
+        padding-top: 11px;
+        padding-bottom: 11px;
+        padding-right: 11px;
+        text-align: end; 
+    }
+}
+
+.navbar-up__list {
+    @media screen and (min-width: 320px) {
+        display: none;
+    }
+}

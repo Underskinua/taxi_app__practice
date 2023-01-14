@@ -1,3 +1,21 @@
+.header {
+  background: #212121;
+}
+@media screen and (min-width: 320px) {
+  .header {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-right: 11px;
+    text-align: end;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .navbar-up__list {
+    display: none;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -49,5 +67,188 @@ img {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  margin: -1px;
+}
+
+.navbar-down {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: rgb(0, 0, 0);
+  opacity: 60%;
+  position: absolute;
+  z-index: 9;
+}
+@media screen and (min-width: 320px) {
+  .navbar-down__indent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.navbar-down__logo {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 13px;
+}
+@media screen and (min-width: 320px) {
+  .navbar-down__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar-down__logo p {
+    display: none;
+  }
+}
+
+.navbar-down__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #ffffff;
+}
+@media screen and (min-width: 320px) {
+  .navbar-down__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar-down__list p {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .call-btn {
+    padding: 6px 9px 6px 9px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#1EACC7), to(#4CE2FF));
+    background: linear-gradient(#1EACC7 0%, #4CE2FF 100%);
+    border-radius: 4px;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 2.2;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+}
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+@media screen and (min-width: 320px) {
+  .banner {
+    padding-top: 101px;
+    padding-bottom: 34px;
+    background-image: url(../images/mobile/bg-mobile-1.jpg);
+  }
+  .banner h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 1.17;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .banner h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 1.17;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 73px;
+  }
+  .banner p {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .send-btn {
+    padding: 15px 28px 15px 28px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#1EACC7), to(#4CE2FF));
+    background: linear-gradient(#1EACC7 0%, #4CE2FF 100%);
+    border-radius: 4px;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .resontowork {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .resontowork h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 1;
+    color: #ffffff;
+    background: #000000;
+    padding: 7px 9px 7px 9px;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+    width: 115px;
+  }
+  .resontowork h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+    color: #222222;
   }
 }/*# sourceMappingURL=main.css.map */
