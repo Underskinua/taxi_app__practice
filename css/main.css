@@ -16,6 +16,13 @@
   }
 }
 
+@media screen and (min-width: 320px) {
+  .mobile-menu-btn {
+    background: #212121;
+    border: none;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -287,6 +294,79 @@ img {
 }
 
 .mobileapi {
-  padding-top: 25px;
-  padding-bottom: 43px;
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (min-width: 320px) {
+  .mobileapi {
+    padding-top: 25px;
+    padding-bottom: 43px;
+    background-image: url(../images/mobile/bg_mobile-2.jpg);
+  }
+  .mobileapi h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 1;
+    color: #ffffff;
+    background: #000000;
+    padding: 7px 9px 7px 9px;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+    width: 115px;
+  }
+  .mobileapi h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+    color: #222222;
+    margin-bottom: 9px;
+  }
+  .mobileapi p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #222222;
+    margin-bottom: 27px;
+  }
+}
+
+.mobileapi__card-indent {
+  position: relative;
+}
+.mobileapi__card-indent li {
+  margin-bottom: 30px;
+}
+.mobileapi__card-indent:last-child {
+  margin-bottom: 0;
+}
+
+.mobileapi__card-circle {
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  background: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 320px) {
+  .mobileapi__card-layer {
+    position: absolute;
+  }
+  .mobileapi__card-layer p {
+    margin-bottom: 0;
+    padding-bottom: 50%;
+  }
 }/*# sourceMappingURL=main.css.map */
