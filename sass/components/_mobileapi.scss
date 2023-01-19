@@ -1,14 +1,14 @@
 .mobileapi {
 
-    background-size: cover;
-    background-position: center;
-        // position: relative;
-        // z-index: 1;
+    
+        
     @media screen and (min-width: 320px) {
         padding-top: 25px;
         padding-bottom: 43px;
 
         background-image: url(../images/mobile/bg_mobile-2.jpg);
+        background-size: cover;
+        background-position: center;
 
 
         & h3 {
@@ -48,7 +48,7 @@
 
 .mobileapi__card-indent {  
     
-    position: relative;
+    // position: relative;
 
     & li {
     margin-bottom: 30px;
@@ -72,7 +72,7 @@
 .mobileapi__card-layer {
     
     @media screen and (min-width: 320px) {
-        position: absolute;        
+        // position: absolute;        
 
         & p {
                 margin-bottom: 0;

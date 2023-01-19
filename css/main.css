@@ -293,15 +293,13 @@ img {
   margin-bottom: 24px;
 }
 
-.mobileapi {
-  background-size: cover;
-  background-position: center;
-}
 @media screen and (min-width: 320px) {
   .mobileapi {
     padding-top: 25px;
     padding-bottom: 43px;
     background-image: url(../images/mobile/bg_mobile-2.jpg);
+    background-size: cover;
+    background-position: center;
   }
   .mobileapi h3 {
     font-family: "Roboto", sans-serif;
@@ -335,9 +333,6 @@ img {
   }
 }
 
-.mobileapi__card-indent {
-  position: relative;
-}
 .mobileapi__card-indent li {
   margin-bottom: 30px;
 }
@@ -362,11 +357,214 @@ img {
 }
 
 @media screen and (min-width: 320px) {
-  .mobileapi__card-layer {
-    position: absolute;
-  }
   .mobileapi__card-layer p {
     margin-bottom: 0;
     padding-bottom: 50%;
   }
+}
+
+@media screen and (min-width: 320px) {
+  .banner-car {
+    padding-top: 25px;
+    padding-bottom: 31px;
+    height: 393px;
+    background: #070716;
+    background-image: url(../../images/mobile/bg-mobile-3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .banner-car h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #070716;
+    background: #ffffff;
+    padding: 7px 9px 7px 9px;
+    text-align: center;
+    width: 115px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 240px;
+  }
+  .banner-car p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 1.4;
+    color: #ffffff;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .requirements {
+    padding-top: 22px;
+  }
+  .requirements h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 1;
+    color: #ffffff;
+    background: #000;
+    padding: 7px 9px 7px 9px;
+    width: 115px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+  }
+  .requirements h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+    color: #222;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .requirements-list__indent p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #1ca8c3;
+  }
+  .requirements-list__indent p:nth-of-type(2) {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.17;
+    color: #1ca8c3;
+    margin-bottom: 30px;
+  }
+  .requirements-list__indent p:nth-of-type(4) {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.09;
+    color: #ff5656;
+    margin-bottom: 3px;
+    margin-top: 30px;
+  }
+  .requirements-list__indent p:nth-of-type(5) {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.09;
+    color: #ff5656;
+    margin-bottom: 3px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .requirements-list__blue {
+    margin-bottom: 15px;
+  }
+  .requirements-list__blue p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.72;
+    color: #222;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .requirements-list__blue p::before {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    content: " " url(../../images/check_blue.png);
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .requirements-list__red {
+    margin-bottom: 30px;
+  }
+  .requirements-list__red p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.72;
+    color: #222;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .requirements-list__red p::before {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    content: " " url(../../images/check_red.png);
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .banner-world {
+    padding-top: 26px;
+    padding-bottom: 30px;
+    height: 360px;
+    background-image: url(../../images/mobile/bg-mobile-4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .banner-world h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 1;
+    color: #070716;
+    background: #fff;
+    padding: 7px 9px 7px 9px;
+    width: 115px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+  }
+  .banner-world h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+    color: #fff;
+    margin-bottom: 11px;
+    text-align: center;
+  }
+  .banner-world p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 200px;
+  }
+  .banner-world p:nth-of-type(2) {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #1fbad6;
+  }
+}
+
+footer {
+  padding-top: 24px;
+  padding-bottom: 30px;
 }/*# sourceMappingURL=main.css.map */
