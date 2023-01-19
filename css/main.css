@@ -567,4 +567,28 @@ img {
 footer {
   padding-top: 24px;
   padding-bottom: 30px;
+}
+
+@media screen and (min-width: 320px) {
+  .footer__nav-up {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 8px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1;
+    color: #070716;
+    text-transform: uppercase;
+  }
+  .footer__nav-up::before {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    content: "";
+    background: #1fbad6;
+    width: 255px;
+    height: 6px;
+  }
 }/*# sourceMappingURL=main.css.map */

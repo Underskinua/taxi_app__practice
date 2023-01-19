@@ -2,3 +2,31 @@ footer {
     padding-top: 24px;
     padding-bottom: 30px;
 }
+
+.footer__nav-up {
+
+    @media screen and (min-width: 320px) {
+        display: flex;
+        gap: 8px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 1;
+        color: #070716;
+        text-transform: uppercase;
+
+
+
+        &::before {
+                display: flex;
+                content: '';
+                background: #1fbad6;
+                width: 255px;
+                height: 6px;
+        
+            }
+    }
+    
+
+    
+}
