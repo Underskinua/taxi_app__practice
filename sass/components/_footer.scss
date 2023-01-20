@@ -1,6 +1,19 @@
 footer {
     padding-top: 24px;
     padding-bottom: 30px;
+    position: relative;
+
+    & p {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 1;
+        color: #1fbad6;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 17px;
+    }
 }
 
 .footer__nav-up {
@@ -14,19 +27,75 @@ footer {
         line-height: 1;
         color: #070716;
         text-transform: uppercase;
+        height: 41px;
+        align-items: flex-end;
 
-
-
-        &::before {
-                display: flex;
+            &::before {
+                display: flex;                
                 content: '';
                 background: #1fbad6;
                 width: 255px;
                 height: 6px;
-        
+                position: absolute;
+                margin-bottom: 35px;
+                margin-left: 14px;       
             }
-    }
-    
 
-    
+        & a {
+            color: #070716;
+            cursor: pointer;
+        }
+    }    
+}
+
+.footer__nav-down {
+    @media screen and (min-width: 320px) {
+        display: flex;            
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 1;        
+        text-transform: uppercase;
+        justify-content: space-between;
+
+        & a {
+            color: #999;
+            cursor: pointer;
+        }
+            
+            
+    }
+}
+
+.footer__social-icon__indent {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-bottom: 19px;
+}
+
+.footer__social-icon {
+    display: flex;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #070716;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__store__indent {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    // margin-bottom: 19px;
+}
+
+.footer__store-icon {
+    display: flex;
+     
+    & svg {
+        transform-origin: 130%;
+        
+    }
 }

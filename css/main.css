@@ -567,6 +567,18 @@ img {
 footer {
   padding-top: 24px;
   padding-bottom: 30px;
+  position: relative;
+}
+footer p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1;
+  color: #1fbad6;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 17px;
 }
 
 @media screen and (min-width: 320px) {
@@ -581,6 +593,10 @@ footer {
     line-height: 1;
     color: #070716;
     text-transform: uppercase;
+    height: 41px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   .footer__nav-up::before {
     display: -webkit-box;
@@ -590,5 +606,79 @@ footer {
     background: #1fbad6;
     width: 255px;
     height: 6px;
+    position: absolute;
+    margin-bottom: 35px;
+    margin-left: 14px;
   }
+  .footer__nav-up a {
+    color: #070716;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .footer__nav-down {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 1;
+    text-transform: uppercase;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__nav-down a {
+    color: #999;
+    cursor: pointer;
+  }
+}
+
+.footer__social-icon__indent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 19px;
+}
+
+.footer__social-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #070716;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__store__indent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__store-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer__store-icon svg {
+  -webkit-transform-origin: 130%;
+          transform-origin: 130%;
 }/*# sourceMappingURL=main.css.map */
