@@ -1,7 +1,4 @@
-.mobileapi {
-
-    
-        
+.mobileapi {        
     @media screen and (min-width: 320px) {
         padding-top: 25px;
         padding-bottom: 43px;
@@ -46,9 +43,7 @@
     }    
 }
 
-.mobileapi__card-indent {  
-    
-    // position: relative;
+.mobileapi__card-indent {     
 
     & li {
     margin-bottom: 30px;
@@ -59,6 +54,10 @@
     }
 }
 
+.mobileapi__card {
+position: relative;
+}
+
 .mobileapi__card-circle {
     width: 29px;
     height: 29px;
@@ -66,24 +65,32 @@
     background: #000000;
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center; 
+    margin-left: auto;
+    margin-right: auto;
+       
 }
 
-.mobileapi__card-layer {
-    
+.mobileapi__card-layer {     
     @media screen and (min-width: 320px) {
-        // position: absolute;        
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left:0;  
+        padding-top: 80px;  
+        padding-bottom: 27px;    
 
         & p {
-                margin-bottom: 0;
-                padding-bottom: 50%;
-            }
-        
-           
-    }
-
-    
-
-    
-    
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 1.72;
+            color: #ffffff;
+            text-align: center;
+            
+            
+            
+        }        
+    }   
 }
