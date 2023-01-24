@@ -9,8 +9,7 @@
 
     @media screen and (min-width: 1200px) {
         padding-top: 15px;
-        padding-bottom: 15px;
-              
+        padding-bottom: 15px;             
     }
 }
 
@@ -22,33 +21,31 @@
     @media screen and (min-width: 1200px) {
         display: flex;        
         gap: 29px;
-               
-                & a {
-                    text-decoration: none;
-                    font-family: "Roboto", sans-serif;
-                    font-weight: 300;
-                    font-size: 15px;
-                    line-height: 15px;
-                    color: #fff;
-                    margin-right: 29px;
-                    display:flex;
-                    align-items: center;
-                }
+        justify-content: center;
+                      
+        & a {
+            text-decoration: none;
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 15px;
+            color: #fff;
+            margin-right: 29px;
+            display:flex;
+            align-items: center;
+        }
+        
         & .navbar-up__list-separator {
             display: flex;
             height: 31px;            
-            border-right: 2px dashed #fff;
+            border-right: 2px dotted #000;
+        }                
+
+        & .navbar-up__list-separator:last-child {
+            border-right: none;
         }
-                // & a::after {
-                    // display: flex;
-                    // position: absolute;
-                    // content: '' url(../../// images/desktop/separator.// png);
-                    // padding-left: 100px;     
-                // }
     }
 }
-
-
 
 .mobile-menu-btn {
     @media screen and (min-width: 320px) {

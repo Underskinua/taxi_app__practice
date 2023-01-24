@@ -57,19 +57,33 @@
         <div class="container">
           <div class="navbar-down__indent">
             <div class="navbar-down__logo">
-              <img src="./images/mobile/uber777.png" width="130" height="15" />
+              <picture>
+                <source
+                  srcset="./images/desktop/logo-desktop.png"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/mobile/uber777.png"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/mobile/uber777.png"
+                  alt="logo"
+                  width="285"
+                  height="32"
+                />
+              </picture>
               <p>Официальный партнер Uber в Днепре</p>
             </div>
-
-            <ul class="list navbar-down__list">
-              <li>
-                <p>Звоните нам ежедневно</p>
-              </li>
-              <li>8 056 002 20 22</li>
-              <li>
-                <button type="button" class="call-btn">заказать звонок</button>
-              </li>
-            </ul>
+            <div class="navbar-down__wrapper">
+              <ul class="list navbar-down__list">
+                <li>
+                  <p>Звоните нам ежедневно</p>
+                </li>
+                <li>8 056 002 20 22</li>
+              </ul>
+              <button type="button" class="call-btn">заказать звонок</button>
+            </div>
           </div>
         </div>
       </section>
