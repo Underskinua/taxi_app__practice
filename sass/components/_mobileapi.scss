@@ -1,14 +1,19 @@
 .mobileapi {        
     @media screen and (min-width: 320px) {
-        padding-top: 25px;
-        padding-bottom: 43px;
-
+        padding: 25px 0 43px 0;        
         background-image: url(../images/mobile/bg_mobile-2.jpg);
         background-size: cover;
         background-position: center;
+    }
 
+    @media screen and (min-width: 1200px) {
+        
+        padding: 44px 0 74px 0;
+        background-image: url(../images/desktop/bg-desktop-2.jpg);
+    }
 
-        & h3 {
+    & h3 {
+        @media screen and (min-width: 320px) {
                 font-family: "Roboto", sans-serif;
                 font-weight: 400;
                 font-size: 11px;
@@ -17,45 +22,86 @@
                 background: #000000;
                 padding: 7px 9px 7px 9px;
                 text-transform: uppercase;
-                margin-left: auto;
-                margin-right: auto;
-                margin-bottom: 16px;
+                margin: 0 auto 16px auto;
                 width: 115px;
-            }
+            }      
+            
+        @media screen and (min-width: 1200px) {                
+            padding: 7px 11px 7px 11px;
+            margin: 0 auto 40px auto;                    
+        }
+    }   
         
-            & h2 {
-                font-family: "Roboto", sans-serif;
-                font-weight: 700;
-                font-size: 16px;
-                line-height: 1;
-                color: #222222;
-                margin-bottom: 9px;
-            }
+    & h2 {
+        @media screen and (min-width: 320px) {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1;
+            text-transform: uppercase;
+            color: #222222;
+            margin-bottom: 9px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 38px;
+            line-height: 1.2;
+            text-align: center
+        }                
+    }
         
-            & p {
-                font-family: "Roboto", sans-serif;
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 1.5;
-                color: #222222;
-                margin-bottom: 27px;
-            }
+    & p {
+        @media screen and (min-width: 320px) {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.5;
+            text-transform: uppercase;
+            color: #222222;
+            margin-bottom: 27px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 17px;
+            line-height: 1.2;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 31px;
+        }                
     }    
 }
 
-.mobileapi__card-indent {     
-
+.mobileapi__card-indent {    
+    
     & li {
-    margin-bottom: 30px;
+    @media screen and (min-width: 320px) {
+            margin-bottom: 30px;
+        }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+        }
+    }
+    
+    
+    &:last-child {
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 0;
+        }
     }
 
-    &:last-child {
-        margin-bottom: 0;
-    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 19px 67px;
+        justify-content: center;
+        flex-basis: calc((100% - 134px) / 2);      
+    }   
 }
 
 .mobileapi__card {
     position: relative;
+    
 }
 
 .mobileapi__card-circle {
@@ -66,8 +112,7 @@
     display: flex;
     align-items: center;
     justify-content: center; 
-    margin-left: auto;
-    margin-right: auto;      
+    margin: 0 auto 0 auto;    
 }
 
 .mobileapi__card-layer {     
@@ -77,20 +122,25 @@
         height: 100%;
         top: 0;
         left:0;  
-        padding-top: 80px;  
-        padding-bottom: 27px;    
+        padding: 80px 0 27px 0;   
+        flex-grow: 1;       
+    }
 
-        & p {
-            font-family: "Roboto", sans-serif;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 1.72;
-            color: #ffffff;
-            text-align: center;
-            margin-bottom: 53px;
-            
-            
-            
-        }        
+    & p {
+        @media screen and (min-width: 320px) {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.72;
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 53px;           
+        } 
+        
+        @media screen and (min-width: 1200px) {
+            font-size: 24px;
+            line-height: 1.29;
+            margin-bottom: 71px;
+        }
     }   
 }

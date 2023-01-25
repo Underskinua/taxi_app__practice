@@ -3,16 +3,13 @@
 }
 @media screen and (min-width: 320px) {
   .header {
-    padding-top: 11px;
-    padding-bottom: 11px;
-    padding-right: 11px;
+    padding: 11px 11px 11px 0;
     text-align: end;
   }
 }
 @media screen and (min-width: 1200px) {
   .header {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px 0 15px 0;
   }
 }
 
@@ -140,8 +137,7 @@ img {
 
 @media screen and (min-width: 320px) {
   .navbar-down {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0 10px 0;
     background: rgb(0, 0, 0);
     opacity: 60%;
     position: absolute;
@@ -151,8 +147,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .navbar-down {
-    padding-top: 21px;
-    padding-bottom: 19px;
+    padding: 21px 0 19px 0;
   }
 }
 
@@ -278,6 +273,7 @@ img {
 @media screen and (min-width: 1200px) {
   .call-btn {
     padding: 17px 19px 17px 19px;
+    font-size: 14px;
     margin-top: 0;
   }
 }
@@ -290,8 +286,7 @@ img {
 }
 @media screen and (min-width: 320px) {
   .banner {
-    padding-top: 101px;
-    padding-bottom: 34px;
+    padding: 101px 0 34px 0;
     background-image: url(../images/mobile/bg-mobile-1.jpg);
   }
   .banner h1 {
@@ -318,6 +313,34 @@ img {
     display: none;
   }
 }
+@media screen and (min-width: 1200px) {
+  .banner {
+    padding: 140px 0 180px 0;
+    background-image: url(../images/desktop/bg-desktop-1.jpg);
+  }
+  .banner h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+  .banner h2 {
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 28px;
+  }
+  .banner p {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.33;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 37px;
+  }
+  .banner p:nth-of-type(2) {
+    margin-bottom: 116px;
+  }
+}
 
 @media screen and (min-width: 320px) {
   .send-btn {
@@ -331,18 +354,22 @@ img {
     font-size: 16px;
     color: #ffffff;
     text-transform: uppercase;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
 }
+@media screen and (min-width: 1200px) {
+  .send-btn {
+    padding: 21px 39px 21px 39px;
+    font-size: 18px;
+  }
+}
 
 @media screen and (min-width: 320px) {
   .resontowork {
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding: 20px 0 40px 0;
   }
   .resontowork h3 {
     font-family: "Roboto", sans-serif;
@@ -353,9 +380,7 @@ img {
     background: #000000;
     padding: 7px 9px 7px 9px;
     text-transform: uppercase;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 16px;
+    margin: 0 auto 16px auto;
     width: 115px;
   }
   .resontowork h2 {
@@ -380,34 +405,97 @@ img {
     line-height: 1.31;
   }
 }
+@media screen and (min-width: 1200px) {
+  .resontowork {
+    padding: 20px 0 71px 0;
+  }
+  .resontowork h3 {
+    padding: 7px 11px 7px 11px;
+    margin-bottom: 37px;
+  }
+  .resontowork h2 {
+    font-size: 38px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 27px;
+  }
+  .resontowork p {
+    width: 372px;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  .resontowork .resontowork__wrappper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .resontowork .resontowork__wrappper ul:nth-of-type(2) {
+    gap: 30px 0;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  .resontowork .resontowork__indent-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px 69px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  .resontowork .resontowork__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 
-.resontowork__border-icon {
-  background: #1eacc7;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 24px;
+@media screen and (min-width: 320px) {
+  .resontowork__border-icon {
+    background: #1eacc7;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto 24px auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .resontowork__border-icon {
+    width: 116px;
+    height: 116px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto 21px auto 0;
+  }
 }
 
 @media screen and (min-width: 320px) {
   .mobileapi {
-    padding-top: 25px;
-    padding-bottom: 43px;
+    padding: 25px 0 43px 0;
     background-image: url(../images/mobile/bg_mobile-2.jpg);
     background-size: cover;
     background-position: center;
   }
+}
+@media screen and (min-width: 1200px) {
+  .mobileapi {
+    padding: 44px 0 74px 0;
+    background-image: url(../images/desktop/bg-desktop-2.jpg);
+  }
+}
+@media screen and (min-width: 320px) {
   .mobileapi h3 {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -417,34 +505,84 @@ img {
     background: #000000;
     padding: 7px 9px 7px 9px;
     text-transform: uppercase;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 16px;
+    margin: 0 auto 16px auto;
     width: 115px;
   }
+}
+@media screen and (min-width: 1200px) {
+  .mobileapi h3 {
+    padding: 7px 11px 7px 11px;
+    margin: 0 auto 40px auto;
+  }
+}
+@media screen and (min-width: 320px) {
   .mobileapi h2 {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1;
+    text-transform: uppercase;
     color: #222222;
     margin-bottom: 9px;
   }
+}
+@media screen and (min-width: 1200px) {
+  .mobileapi h2 {
+    font-size: 38px;
+    line-height: 1.2;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 320px) {
   .mobileapi p {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.5;
+    text-transform: uppercase;
     color: #222222;
     margin-bottom: 27px;
   }
 }
-
-.mobileapi__card-indent li {
-  margin-bottom: 30px;
+@media screen and (min-width: 1200px) {
+  .mobileapi p {
+    font-size: 17px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 31px;
+  }
 }
-.mobileapi__card-indent:last-child {
-  margin-bottom: 0;
+
+@media screen and (min-width: 320px) {
+  .mobileapi__card-indent li {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mobileapi__card-indent li {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mobileapi__card-indent:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mobileapi__card-indent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 19px 67px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-preferred-size: calc((100% - 134px) / 2);
+        flex-basis: calc((100% - 134px) / 2);
+  }
 }
 
 .mobileapi__card {
@@ -465,8 +603,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 0 auto;
 }
 
 @media screen and (min-width: 320px) {
@@ -476,9 +613,13 @@ img {
     height: 100%;
     top: 0;
     left: 0;
-    padding-top: 80px;
-    padding-bottom: 27px;
+    padding: 80px 0 27px 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
+}
+@media screen and (min-width: 320px) {
   .mobileapi__card-layer p {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -489,11 +630,17 @@ img {
     margin-bottom: 53px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .mobileapi__card-layer p {
+    font-size: 24px;
+    line-height: 1.29;
+    margin-bottom: 71px;
+  }
+}
 
 @media screen and (min-width: 320px) {
   .banner-car {
-    padding-top: 25px;
-    padding-bottom: 31px;
+    padding: 25px 0 31px 0;
     height: 393px;
     background: #070716;
     background-image: url(../../images/mobile/bg-mobile-3.png);
@@ -512,9 +659,7 @@ img {
     padding: 7px 9px 7px 9px;
     text-align: center;
     width: 115px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 240px;
+    margin: 0 auto 240px auto;
   }
   .banner-car p {
     font-family: "Roboto", sans-serif;
@@ -540,9 +685,7 @@ img {
     padding: 7px 9px 7px 9px;
     width: 115px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 14px;
+    margin: 0 auto 14px auto;
     text-transform: uppercase;
   }
   .requirements h2 {
@@ -579,8 +722,7 @@ img {
     font-size: 16px;
     line-height: 1.09;
     color: #ff5656;
-    margin-bottom: 3px;
-    margin-top: 30px;
+    margin: 30px 0 3px 0;
   }
   .requirements-list__indent p:nth-of-type(5) {
     font-family: "Roboto", sans-serif;
@@ -640,8 +782,7 @@ img {
 
 @media screen and (min-width: 320px) {
   .banner-world {
-    padding-top: 26px;
-    padding-bottom: 30px;
+    padding: 26px 0 30px 0;
     height: 360px;
     background-image: url(../../images/mobile/bg-mobile-4.jpg);
     background-position: center;
@@ -658,9 +799,7 @@ img {
     padding: 7px 9px 7px 9px;
     width: 115px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 16px;
+    margin: 0 auto 16px auto;
     text-transform: uppercase;
   }
   .banner-world h2 {
@@ -692,8 +831,7 @@ img {
 }
 
 footer {
-  padding-top: 24px;
-  padding-bottom: 30px;
+  padding: 24px 0 30px 0;
   position: relative;
 }
 footer p {
@@ -704,13 +842,11 @@ footer p {
   color: #1fbad6;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 17px;
+  margin: 10px 0 17px 0;
 }
 @media screen and (min-width: 320px) {
   footer img {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 0 auto;
   }
 }
 
@@ -740,8 +876,7 @@ footer p {
     width: 255px;
     height: 6px;
     position: absolute;
-    margin-bottom: 35px;
-    margin-left: 14px;
+    margin: 0 0 35px 14px;
   }
   .footer__nav-up a {
     color: #070716;

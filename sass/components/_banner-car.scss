@@ -1,7 +1,7 @@
 .banner-car {
     @media screen and (min-width: 320px) {
-        padding-top: 25px;
-        padding-bottom: 31px;
+        padding: 25px 0 31px 0;
+        
         height: 393px;
         background: #070716;
         background-image: url(../../images/mobile/bg-mobile-3.png);
@@ -20,9 +20,7 @@
             padding: 7px 9px 7px 9px;
             text-align: center;
             width: 115px;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 240px;
+            margin: 0 auto 240px auto;           
         }
 
         & p {

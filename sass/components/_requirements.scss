@@ -12,9 +12,7 @@
             padding: 7px 9px 7px 9px;
             width: 115px;
             text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 14px;
+            margin: 0 auto 14px auto;            
             text-transform: uppercase;
         } 
 
@@ -58,9 +56,7 @@
             font-size: 16px;
             line-height: 1.09;
             color: #ff5656;
-            margin-bottom: 3px;
-            margin-top: 30px;
-
+            margin: 30px 0 3px 0;
         }
 
         & p:nth-of-type(5) {
@@ -70,15 +66,13 @@
             line-height: 1.09;
             color: #ff5656;
             margin-bottom: 3px;
-
         }
     }
 }
 
-.requirements-list__blue {
-                   
+.requirements-list__blue {                   
     @media screen and (min-width: 320px) {
-        
+        margin-bottom: 15px;
         & p {
             font-family: "Roboto", sans-serif;
             font-weight: 300;
@@ -92,13 +86,13 @@
             display: flex;
             content: ' ' url(../../images/check_blue.png);
             margin-right: 10px;
-        }        
-        margin-bottom: 15px;
+        }             
     }
 }
 
 .requirements-list__red {
     @media screen and (min-width: 320px) {
+        margin-bottom: 30px;
         & p {
             font-family: "Roboto", sans-serif;
             font-weight: 300;
@@ -112,9 +106,6 @@
             display: flex;
             content: ' ' url(../../images/check_red.png);
             margin-right: 10px;
-            }       
-            
-            
-            margin-bottom: 30px;
+            }               
     }
 }
