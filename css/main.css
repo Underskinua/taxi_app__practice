@@ -648,6 +648,14 @@ img {
     background-repeat: no-repeat;
     background-size: contain;
   }
+}
+@media screen and (min-width: 1200px) {
+  .banner-car {
+    padding: 54px 0 137px 0;
+    height: 898px;
+  }
+}
+@media screen and (min-width: 320px) {
   .banner-car h3 {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -661,6 +669,8 @@ img {
     width: 115px;
     margin: 0 auto 240px auto;
   }
+}
+@media screen and (min-width: 320px) {
   .banner-car p {
     font-family: "Roboto", sans-serif;
     font-weight: 300;

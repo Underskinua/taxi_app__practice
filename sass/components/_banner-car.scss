@@ -1,35 +1,42 @@
 .banner-car {
     @media screen and (min-width: 320px) {
-        padding: 25px 0 31px 0;
-        
+        padding: 25px 0 31px 0;        
         height: 393px;
         background: #070716;
         background-image: url(../../images/mobile/bg-mobile-3.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
+    }
 
+    @media screen and (min-width: 1200px) {
+        padding: 54px 0 137px 0;
+        height: 898px;
+    }
         & h3 {
-            font-family: "Roboto", sans-serif;
-            font-weight: 400;
-            font-size: 11px;
-            line-height: 1;
-            text-transform: uppercase;
-            color: #070716;
-            background: #ffffff;
-            padding: 7px 9px 7px 9px;
-            text-align: center;
-            width: 115px;
-            margin: 0 auto 240px auto;           
+            @media screen and (min-width: 320px) {
+                font-family: "Roboto", sans-serif;
+                font-weight: 400;
+                font-size: 11px;
+                line-height: 1;
+                text-transform: uppercase;
+                color: #070716;
+                background: #ffffff;
+                padding: 7px 9px 7px 9px;
+                text-align: center;
+                width: 115px;
+                margin: 0 auto 240px auto;    
+            }       
         }
 
         & p {
-            font-family: "Roboto", sans-serif;
-            font-weight: 300;
-            font-size: 17px;
-            line-height: 1.4;
-            color: #ffffff;
-            text-align: center;
-        }       
-    }
+            @media screen and (min-width: 320px) {
+                font-family: "Roboto", sans-serif;
+                font-weight: 300;
+                font-size: 17px;
+                line-height: 1.4;
+                color: #ffffff;
+                text-align: center;
+            }            
+        }     
 }
