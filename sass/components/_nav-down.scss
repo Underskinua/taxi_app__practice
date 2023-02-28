@@ -16,14 +16,7 @@
 .navbar-down__indent {
     display: flex;
     justify-content: space-between;
-    margin: 0 26px;   
-
-    @media screen and (min-width: 320px) {
-        margin: 0;
-          
-    }
-
-    
+    margin: 0 26px;       
 }
 
 .navbar-down__logo {
