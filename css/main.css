@@ -24,18 +24,17 @@
     display: -ms-flexbox;
     display: flex;
     gap: 29px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .navbar-up__list a {
     text-decoration: none;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: 15px;
-    line-height: 15px;
+    line-height: 1;
     color: #fff;
-    margin-right: 29px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -193,6 +192,9 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .navbar-down__logo p {
     display: -webkit-box;
