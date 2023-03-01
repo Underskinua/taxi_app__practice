@@ -45,13 +45,11 @@
         text-transform: uppercase;
         height: 41px;
         align-items: flex-end;
-        justify-content: space-between;       
+        justify-content: center;       
     }    
 
-    @media screen and (min-width: 1200px) {
-        justify-content: center;   
-        margin: 0 auto 15px;  
-        
+    @media screen and (min-width: 1200px) {        
+        margin: 0 auto 15px;          
     }
 
     &::before {
@@ -61,8 +59,7 @@
         width: 255px;
         height: 6px;
         position: absolute;
-        margin: 0 auto 35px auto; 
-                     
+        margin: 0 auto 35px auto;                      
     }
 
     & a {
