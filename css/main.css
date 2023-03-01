@@ -677,7 +677,7 @@ img {
 @media screen and (min-width: 1200px) {
   .banner-car {
     background-image: url(../../images/desktop/Автомобиль.png), url(../../images/desktop/Подложка.png);
-    background-position: center;
+    background-position: center, bottom;
     background-repeat: no-repeat;
     background-size: contain;
     padding: 54px 0 137px 0;
