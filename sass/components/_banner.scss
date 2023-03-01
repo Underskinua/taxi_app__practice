@@ -13,7 +13,7 @@
             font-weight: 900;
             font-size: 30px;
             line-height: 1.17;
-            color: #ffffff;
+            color: $white;
             text-transform: uppercase;
             text-align: center;
             margin-bottom: 30px;
@@ -24,7 +24,7 @@
             font-weight: 900;
             font-size: 20px;
             line-height: 1.17;
-            color: #ffffff;
+            color: $white;
             text-transform: uppercase;
             text-align: center;
             margin-bottom: 73px;
@@ -36,7 +36,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-        padding: 140px 0 180px 0;
+        padding: 140px 107px 180px 107px;
         
         background-image: url(../images/desktop/bg-desktop-1.jpg);  
         
@@ -57,9 +57,10 @@
             font-weight: 400;
             font-size: 18px;
             line-height: 1.33;
-            color: #ffffff;
+            color: $white;
             text-align: center;
-            margin-bottom: 37px;
+            margin: 0 auto 37px;
+            width: 985px;
         }
 
         & p:nth-of-type(2) {
@@ -77,7 +78,7 @@
         font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-size: 16px;
-        color: #ffffff;
+        color: $white;
         text-transform: uppercase;
         margin: 0 auto 0 auto;        
         display: flex;
@@ -86,7 +87,5 @@
     @media screen and (min-width: 1200px) {
         padding: 21px 39px 21px 39px;
         font-size: 18px;
-
-
     }
 }

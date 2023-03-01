@@ -1,78 +1,87 @@
-.requirements {
-    @media screen and (min-width: 320px) {
-        padding-top: 22px;
+.requirements {    
+    padding-top: 22px;
                 
-        & h3 {
-            font-family: "Roboto", sans-serif;
-            font-weight: 400;
-            font-size: 11px;
-            line-height: 1;
-            color: #ffffff;
-            background: #000;
-            padding: 7px 9px 7px 9px;
-            width: 115px;
-            text-align: center;
-            margin: 0 auto 14px auto;            
-            text-transform: uppercase;
-        } 
+    & h3 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 1;
+        color: $white;
+        background: $black;
+        padding: 7px 9px 7px 9px;
+        width: 115px;
+        text-align: center;
+        margin: 0 auto 14px auto;            
+        text-transform: uppercase;
+    } 
 
-        & h2 {
-            font-family: "Roboto", sans-serif;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 1;
-            color: #222;
-            text-align: center;
-            text-transform: uppercase;
-            margin-bottom: 30px;
-        }
-    }
+    & h2 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1;
+        color: #222;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }    
 }
 
-.requirements-list__indent {
-    @media screen and (min-width: 320px) {
+.requirements-list__indent {  
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 52px 84px;
+        justify-content: center;
+    }  
         
-        & p {
+    & p {
+         @media screen and (min-width: 320px) {
             font-family: "Roboto", sans-serif;
             font-weight: 400;
             font-size: 16px;
             line-height: 1.5;
-            color: #1ca8c3;
+            color: $blue;
+        }            
+    }
 
-        }
-
-        & p:nth-of-type(2) {
+    & p:nth-of-type(2) {
+        @media screen and (min-width: 320px) {
             font-family: "Roboto", sans-serif;
             font-weight: 300;
             font-size: 14px;
             line-height: 1.17;
-            color: #1ca8c3;
+            color: $blue;
             margin-bottom: 30px;
-        }
-
-        & p:nth-of-type(4) {
-            font-family: "Roboto", sans-serif;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 1.09;
-            color: #ff5656;
-            margin: 30px 0 3px 0;
-        }
-
-        & p:nth-of-type(5) {
-            font-family: "Roboto", sans-serif;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 1.09;
-            color: #ff5656;
-            margin-bottom: 3px;
-        }
+        }            
     }
+
+    & p:nth-of-type(4) {
+        @media screen and (min-width: 320px) {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.09;
+            color: $red;
+            margin: 30px 0 3px 0;
+        }            
+    }
+
+    & p:nth-of-type(5) {
+        @media screen and (min-width: 320px) {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.09;
+            color: $red;
+            margin-bottom: 3px;
+        }            
+    }    
 }
 
-.requirements-list__blue {                   
-    @media screen and (min-width: 320px) {
-        margin-bottom: 15px;
+.requirements-list__blue {        
+        margin-bottom: 15px;    
+
         & p {
             font-family: "Roboto", sans-serif;
             font-weight: 300;
@@ -86,13 +95,23 @@
             display: flex;
             content: ' ' url(../../images/check_blue.png);
             margin-right: 10px;
-        }             
-    }
+        }   
+        
+        & li {
+            word-break: break-all;
+            @media screen and (min-width: 320px) {
+                width: 290px;
+            }
+
+            @media screen and (min-width: 1200px) {
+                width: 390px;
+            }            
+        }
 }
 
-.requirements-list__red {
-    @media screen and (min-width: 320px) {
+.requirements-list__red {    
         margin-bottom: 30px;
+    
         & p {
             font-family: "Roboto", sans-serif;
             font-weight: 300;
@@ -106,6 +125,16 @@
             display: flex;
             content: ' ' url(../../images/check_red.png);
             margin-right: 10px;
-            }               
-    }
+        }    
+
+        & li {
+            word-break: break-all;
+            @media screen and (min-width: 320px) {
+                width: 290px;
+            }
+
+            @media screen and (min-width: 1200px) {
+                width: 390px;
+            }            
+        }
 }

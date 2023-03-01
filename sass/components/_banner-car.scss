@@ -1,17 +1,26 @@
-.banner-car {
-    @media screen and (min-width: 320px) {
-        padding: 25px 0 31px 0;        
-        height: 393px;
-        background: #070716;
+.banner-car {           
+    background: #070716;
+    @media screen and (min-width: 320px) {   
+        padding: 25px 0 31px 0;  
+        
+        max-height: 898px; 
         background-image: url(../../images/mobile/bg-mobile-3.png);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: contain;    
     }
-
+      
     @media screen and (min-width: 1200px) {
+        
+        background-image: url(../../images/desktop/Автомобиль.png), url(../../images/desktop/Подложка.png);
+        
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;           
+        
         padding: 54px 0 137px 0;
         height: 898px;
+        
     }
         & h3 {
             @media screen and (min-width: 320px) {
@@ -21,7 +30,7 @@
                 line-height: 1;
                 text-transform: uppercase;
                 color: #070716;
-                background: #ffffff;
+                background: $white;
                 padding: 7px 9px 7px 9px;
                 text-align: center;
                 width: 115px;
@@ -35,7 +44,7 @@
                 font-weight: 300;
                 font-size: 17px;
                 line-height: 1.4;
-                color: #ffffff;
+                color: $white;
                 text-align: center;
             }            
         }     

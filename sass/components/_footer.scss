@@ -1,28 +1,39 @@
-footer {
-    padding: 24px 0 30px 0;
-    
+.footer {
+    padding: 11px 0 31px 0;
+    display: flex;    
+    align-items: center;
     position: relative;
+
+    @media screen and (min-width: 320px) {
+        display: block;
+    }   
 
     & p {
         font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-size: 11px;
         line-height: 1;
-        color: #1fbad6;
+        color: $blue;
         text-transform: uppercase;
         text-align: center;
-        margin: 10px 0 17px 0;        
+        margin: 10px 0 17px 0;    
+       
     }
 
-    & img {
+
+
+    & img {        
         @media screen and (min-width: 320px) {
-            margin: 0 auto 0 auto;            
+            margin: 0 auto;            
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-right: 23px;
         }
     }
 }
 
 .footer__nav-up {
-
     @media screen and (min-width: 320px) {
         display: flex;
         gap: 8px;
@@ -34,22 +45,30 @@ footer {
         text-transform: uppercase;
         height: 41px;
         align-items: flex-end;
-
-            &::before {
-                display: flex;                
-                content: '';
-                background: #1fbad6;
-                width: 255px;
-                height: 6px;
-                position: absolute;
-                margin: 0 0 35px 14px;                
-            }
-
-        & a {
-            color: #070716;
-            cursor: pointer;
-        }
+        justify-content: space-between;       
     }    
+
+    @media screen and (min-width: 1200px) {
+        justify-content: center;   
+        margin: 0 auto 15px;  
+        
+    }
+
+    &::before {
+        display: flex;                
+        content: '';
+        background: $blue;
+        width: 255px;
+        height: 6px;
+        position: absolute;
+        margin: 0 auto 35px auto; 
+                     
+    }
+
+    & a {
+        color: #070716;
+        cursor: pointer;
+    }
 }
 
 .footer__nav-down {
@@ -58,22 +77,42 @@ footer {
         font-family: "Roboto", sans-serif;
         font-weight: 300;
         font-size: 11px;
-        line-height: 1;        
+        line-height: 1;   
+
         text-transform: uppercase;
         justify-content: space-between;
-
-        & a {
-            color: #999;
-            cursor: pointer;
-        }            
+        margin: 0 15px;        
     }
+
+    @media screen and (min-width: 1200px) {
+        justify-content: center;
+        gap: 11px;
+    }
+
+    & a {
+        color: #999;
+        cursor: pointer;
+    }            
 }
 
 .footer__social-icon__indent {
     display: flex;
     gap: 5px;
     justify-content: center;
-    margin-bottom: 19px;
+    margin: 37px 0 19px 23px;   
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 1300px;
+    }
+}
+
+.arrive {
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;        
+        position: absolute;
+        top: 0;
+    }
 }
 
 .footer__social-icon {
