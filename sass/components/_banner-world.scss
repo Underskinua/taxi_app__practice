@@ -8,17 +8,14 @@
         background-repeat: no-repeat;
         background-size: contain;               
     }
-
     @media screen and (min-width: 1200px) {
         background: #080816;
         background-image: url(../../images/desktop/world_bg-desktop.jpg);
         padding-bottom: 44px;
         height: 716px;
     }
-
     & p {
         @media screen and (min-width: 320px) {
-            font-family: "Roboto", sans-serif;
             font-weight: 400;
             font-size: 14px;
             line-height: 1.5;
@@ -26,29 +23,20 @@
             text-align: center; 
         }            
     }
-
     & p:nth-of-type(2) {           
-        font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-size: 15px;
         line-height: 1;
         text-transform: uppercase;
         color: $blue; 
-
         @media screen and (min-width: 320px) {
             margin-top: 200px;
-        }
-        
+        }        
         @media screen and (min-width: 1200px){
             margin-top: 540px;
-        }
-             
+        }             
     }
-
-       
-
-    & h3 {        
-        font-family: "Roboto", sans-serif;
+    & h3 {           
         font-weight: 400;
         font-size: 11px;
         line-height: 1;
@@ -60,17 +48,14 @@
         margin: 0 auto 16px auto;            
         text-transform: uppercase;              
     }
-
     & h2 {
-        @media screen and (min-width: 320px) {
-            font-family: "Roboto", sans-serif;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1;
-        color: $white;
-        margin-bottom: 11px;
-        text-align: center;
-        }
-        
+        @media screen and (min-width: 320px) {            
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1;
+            color: $white;
+            margin-bottom: 11px;
+            text-align: center;
+        }        
     }
 }

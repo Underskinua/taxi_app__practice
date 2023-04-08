@@ -1,16 +1,12 @@
 .resontowork {
     padding: 20px 0 71px 0;
-
     @media screen and (min-width: 320px) {
         padding: 20px 0 40px 0;
-    }
-           
+    }           
         & h3 {              
             padding: 7px 11px 7px 11px;
-            margin-bottom: 37px;   
-
-            @media screen and (min-width: 320px) {
-                font-family: "Roboto", sans-serif;
+            margin-bottom: 37px; 
+            @media screen and (min-width: 320px) {                
                 font-weight: 400;
                 font-size: 11px;
                 line-height: 1;
@@ -22,15 +18,12 @@
                 width: 115px;                
             }                  
         }
-
         & h2 {
             font-size: 38px;
             line-height: 1.2;
             text-align: center;
             margin-bottom: 27px;
-
-            @media screen and (min-width: 320px) {
-                font-family: "Roboto", sans-serif;
+            @media screen and (min-width: 320px) {                
                 font-weight: 700;
                 font-size: 16px;
                 line-height: 1;
@@ -38,34 +31,29 @@
                 margin-bottom: 24px; 
             }                         
         }
-
         & p {
             width: 372px;
             margin: 0;
-            @media screen and (min-width: 320px) {
-                font-family: "Roboto", sans-serif;
+            @media screen and (min-width: 320px) {                
                 font-weight: 300;
                 font-size: 15px;
                 line-height: 1.4; 
                 margin: 0 auto 23px auto;     
             }           
-        }   
-        
+        }           
         & span {
             color: $blue;
             font-weight: 400;
             font-size: 16px;
             line-height: 1.31;
         }    
-}   
-  
+}     
 .resontowork__wrappper {  
     @media screen and (min-width: 1200px) {
         display: flex; 
         gap: 53px;                 
     }      
 }
-
 .resontowork__indent-list {        
     @media screen and (min-width: 1200px) {
         display: flex;
@@ -73,17 +61,14 @@
         gap: 30px;   
     }                         
 }
-
 .resontowork__card {
     & p {
         width: 100%;
-    }
-    
+    }    
     @media screen and (min-width: 1200px) {
         display: flex;   
     }                      
-}
-    
+}    
 .resontowork__border-icon {
     @media screen and (min-width: 320px) {
         background: $blue;
@@ -95,7 +80,6 @@
         justify-content: center;
         margin: 0 auto 24px auto;       
     }
-
     @media screen and (min-width: 1200px) {
         width: 116px;
         height: 116px; 
